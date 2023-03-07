@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="images/favicon_io/site.webmanifest">
+
+    <title>Sum of Digits</title>
+
+</head>
+<body>
+  <h1>Sum of Digits</h1>
+  <div class="container">
+<div class="section-1">
+  <div class="info info1">
+    <p>Enter a number at least 2 digits long.</p>
+  </div>
+<div class="inputGroup">
+  <input required type="text" name="userNum" class="box" id="userNum" size="17" pattern=".{2,}" maxlength="14" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/^0/, '').replace(/(\..*)\./g, '$1')">
+    <button id="firstButton" onclick="treeResult4()" disabled>Enter</button>
+
+   <!-- <span id="numResult" name="numResult"></span> -->
+</div>
+</div>
+<div class="section-2">
+  <div class="info info2">
+<p>Add the individual digits of the result.</p>
+</div>
+<div class="sumDigi">
+  <p id="tree1"></p>
+ <!-- <div class="info info3">
+  </div>-->
+
+<!--<p id="digitsBtn"><span>Sum of Digits</span>
+      <button id="sumButton" onclick="sumOfDigits()" >=</button>
+      <span id="sumResult" name="sumResult" value="0"></span></p>-->
+</div>
+</div>
+
+  <div class="section-3">
+    <div class="info info4">
+      <p>Keep summing the digits until you get one-digit.</p>
+        </div>
+  
+
+<div class="section-4">
+  <!--<button class="magicButton" id="magicButton" onclick="treeResult4()" >View Sums</button>-->
+<div class="treeOnly">
+  <p id="tree3"></p>
+  <p id="tree3-1"></p>
+  <p id="tree4"></p>
+</div>
+  </div>
+</div>
+<div class="reset">
+  <button id="resetBtn" onclick="reset()" >Reset</button>
+</div>  
+<footer>Sum of Digits 2023</footer>
+  </div>
+  
+ 
+    <script type="text/javascript" src="scripts.js">
+</script>
+
+</body>
+</html>

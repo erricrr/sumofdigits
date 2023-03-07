@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&display=swap');
+:root {
+  --crazy-color3: #BF1363;
+  --crazy-color2: #231E23;
+  --crazy-color5: #39A6A3;
+  --crazy-color1: #DEEEEA;
+  --crazy-colorDis: #e0e0e5;
+  --boxRadius: 5px;
+--shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+
+--font1: 'Amatic SC', cursive;
+--font2: 'Public Sans', sans-serif;
+
+--paddingInfo: 1rem;
+
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+  }
+
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    color: var(--crazy-color2);
+    background-color: var(--crazy-color5);
+
+
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  
+  .container:before {
+    position: absolute;
+    content: 'Sum of Digits';
+    z-index: -1;
+
+    top: -14px;
+    left: 40px;
+
+    color: var(--crazy-color2);
+    background-color: var(--crazy-color5);
+    font-family: var(--font1);
+    font-size: 22vw;
+  }
+
+
+
+
+a:link {
+  color: var(--crazy-color2);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--crazy-color3);
+}
+
+.container {
+  font-family: var(--font2);
+  text-align: center;
+  font-size: 1rem;
+
+  display: grid;
+  gap: 1em;
+  height: 100vh;
+   grid-template-columns: 1.5em 1fr 1fr 1.5em;
+   grid-template-areas: 
+   "... header header ..."
+   "... startTop tree ... "
+   "... startTop tree ... "
+   "... sumNine tree ..."
+   "...  buttonReset buttonReset ..."
+   "footer footer footer footer"
+   ;
+   justify-content: center;
+ 
+
+
+}
+
+
+footer {
+  padding: 60px 0 40px 0;
+
+  color: var(--crazy-color2);
+  background-color: var(--crazy-color5);
+text-align: center;
+  grid-area: footer;
+
+}
+
+.section-1 {   
+  margin-top: 8em;
+  padding: 2rem;
+    grid-area: startTop;
+    border-radius: var(--boxRadius);
+   align-self: stretch;
+    justify-self: end;
+
+
+   display: grid;
+   align-items: center;
+   grid-template-columns: 1fr;
+   grid-template-areas: 
+   "inputNum"
+   "info1";
+
+   background-color: var(--crazy-color2);
+   border-radius: var(--boxRadius);
+   
+  }
+
+
+.info {
+  color: var(--crazy-color5); 
+  font-size: 1rem;
+
+}
+
+.inputGroup {
+  grid-area: inputNum;
+  align-self: end;
+
+}
+
+.info1 {
+  grid-area: info1;
+  align-self: start;
+ margin-top: 0.5rem;
+}
+
+.section-2 {
+  
+  padding: 0 1.3rem;
+    border-radius: var(--boxRadius);
+    grid-area: sumNine;
+    justify-self: end;
+    align-self: stretch;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "info2"
+    "info3"
+    "sumfunc";
+    
+    background-color: var(--crazy-color2);
+    border-radius: var(--boxRadius);
+  
+    
+}
+
+.info2 {
+  grid-area: info2;
+  padding-top: 1.5rem;
+  align-self: end;
+}
+
+.sumDigi {
+  grid-area: sumfunc;
+  align-self: start;
+  padding: 0 1.3rem 1.3rem 1.3rem;
+
+}
+
+.reset {
+    grid-area: buttonReset;
+    border-radius: var(--boxRadius);
+    justify-self: center;
+}
+
+.section-3 {
+    grid-area: tree;
+    border-radius: var(--boxRadius);
+    justify-self: start;
+    align-self: end;
+    
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "info4"
+    "sumTree";
+    
+    background-color: var(--crazy-color2);
+
+}
+.info3 {
+  grid-area: info3;
+
+
+}
+.info4 {
+  grid-area: info4;
+  align-self: end;
+  padding: 2.5rem 2.5rem 0 2.5rem ;
+}
+
+
+.section-4 {
+  padding: 0.75rem 2rem 2rem 2rem;
+  justify-self: center;
+  align-self: start;
+  grid-area: sumTree;
+
+}
+
+.magicButton {
+  margin-top: 1rem;
+}
+
+#firstButton {
+  margin-bottom: 1rem;
+}
+
+
+[class^="section-"] {
+  color: var(--crazy-color1);
+}
+
+
+button {
+  color: var(--crazy-color2);
+  background-color: var(--crazy-color1);
+    border-radius: 0.25rem;
+    border: none;
+    font-size: 1rem;
+}
+
+button:disabled  {
+  background: var(--crazy-colorDis);
+  cursor: default;
+}
+
+input {
+    border-radius: 0.25rem;
+    text-align: center;
+    margin: 5px 10px;
+    background-color: var(--crazy-color1);
+
+    border: 2px solid currentcolor;
+}
+
+
+input:invalid {
+  border: 2px solid var(--crazy-color3);
+}
+Input:invalid:focus {
+  background-image: linear-gradient(var(--crazy-color3), var(--crazy-color1));
+}
+
+
+button:enabled {
+  background-color: var(--crazy-color3);
+  color: var(--crazy-color1);
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+button:enabled:hover {
+  background-color: var(--crazy-color3);
+  color: var(--crazy-color1);
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+button {
+  cursor: pointer;
+  margin: 5px;
+  padding: 0 5px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+input:hover {
+  background-color: var(--crazy-color1);
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  }
+
+
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.box {
+  box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+}
+/*.box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+} */
+
+#numResult, #sumResult {
+  background-color: var(--crazy-color2);
+  text-align: left;
+
+}
+
+#tree1 {
+  background-color: var(--crazy-color2);
+  text-align: center;
+}
+
+
+/*media Qs*/
+
+  
+@media only screen and (max-width: 946px) {
+
+  .container:before {
+    top: -2px;
+  }
+  .container {
+    grid-template-columns: 1.5em 1fr 1.5em;
+
+     grid-template-areas: 
+     "... header  ..."
+     "... startTop  ... "
+     "... sumNine  ... "
+     "... tree  ..."
+     "...  tree  ..."
+     "...   buttonReset ..."
+     "footer footer footer"
+     ;
+     font-size: 0.8rem;
+
+  }
+
+  .section-1 {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "info1"
+    "inputNum";
+
+    justify-self: center;
+  }
+
+  .section-2 {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "info2"
+    "sumfunc"
+    "info4";
+    justify-self: center;
+    align-self: center;
+    margin-top: 0;
+
+  }
+
+.section-3 {
+    justify-self: center;
+    margin-top: 0px;
+    align-self: start;
+
+  }
+
+.section-4 {
+  padding: 0.3rem 0 1.3rem 0;
+}
+
+  .info1 {
+    margin-top: 0;
+    padding-bottom: .75rem;
+  }
+
+  .info4 {
+    margin-top: -10px;
+    padding-bottom: 0.5rem;
+  }
+
+  .info2 {
+    padding: 1.5rem 0 0.5rem 0;
+  }
+
+  .info, button {
+    font-size: 0.9rem;
+  }
+}
+
+/*@media only screen and (max-width: 600px) {
+  .container {
+    font-size: 0.8rem;
+  }
+
+  
+} */
+
+/* Acessibility */
+h1 {
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute!important;
+  border: 0!important;
+  padding: 0!important;
+  margin: 0!important;
+  clip: rect(1px,1px,1px,1px);
+}
+
+a[target="_blank"]::after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  color: var(--crazy-color2);
+  margin: 0 3px 0 5px;
+}
