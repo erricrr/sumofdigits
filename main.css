@@ -289,14 +289,14 @@ input {
     border: 2px solid currentcolor;
 }
 
-
+/*
 input:invalid {
   border: 4px solid var(--crazy-color3);
 }
-/*Input:invalid:focus {
-  background-image: linear-gradient(var(--crazy-color1), var(--crazy-color3));
-}*/
-
+Input:invalid:focus {
+  background-image: linear-gradient(var(--crazy-color1) 55%, var(--crazy-color3));
+}
+*/
 
 button:enabled {
   background-color: var(--crazy-color3);
