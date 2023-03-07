@@ -127,7 +127,7 @@ a:hover {
 
 
 footer {
-  padding: 30px 0 20px 0;
+  padding: 30px 0;
 
   color: var(--crazy-color2);
   background-color: var(--crazy-color5);
@@ -357,7 +357,8 @@ textarea:focus, input:focus{
 @media only screen and (max-width: 946px) {
 
   .container:before {
-    top: -2px;
+    top: 35px;
+    left: 30px;
   }
   .container {
     grid-template-columns: 1.5em 1fr 1.5em;

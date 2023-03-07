@@ -108,8 +108,8 @@ function treeResult3(n) {
 			treeDigits(slicePart)
 		}
 
-		console.log(slicePart)
-		console.log(typeof slicePart)
+		//console.log(slicePart)
+		//console.log(typeof slicePart)
 
 		
 	
