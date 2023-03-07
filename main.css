@@ -362,7 +362,6 @@ textarea:focus, input:focus{
   }
   .container {
     grid-template-columns: 1.5em 1fr 1.5em;
-
      grid-template-areas: 
      "... header  ..."
      "... startTop  ... "
@@ -373,7 +372,7 @@ textarea:focus, input:focus{
      "footer footer footer"
      ;
      font-size: 0.8rem;
-
+     align-content: center;
   }
 
   .section-1 {
@@ -381,24 +380,27 @@ textarea:focus, input:focus{
     grid-template-areas: 
     "info1"
     "inputNum";
+   
 
     justify-self: center;
+   
   }
 
   .section-2 {
     grid-template-columns: 1fr;
+
     grid-template-areas: 
     "info2"
     "sumfunc"
     "info4";
     justify-self: center;
-    align-self: center;
     margin-top: 0;
 
   }
 
 .section-3 {
     justify-self: center;
+    
     margin-top: 0px;
     align-self: start;
 
