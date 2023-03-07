@@ -358,7 +358,7 @@ textarea:focus, input:focus{
 @media only screen and (max-width: 946px) {
 
   .container:before {
-    top: 35px;
+    top: 28px;
     left: 30px;
   }
   .container {
