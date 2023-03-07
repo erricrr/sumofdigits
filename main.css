@@ -373,7 +373,7 @@ textarea:focus, input:focus{
      "footer footer footer"
      ;
      font-size: 0.9rem;
-     align-content: center;
+     align-content: start;
   }
 
   .section-1 {
