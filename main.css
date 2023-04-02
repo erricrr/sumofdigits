@@ -189,7 +189,7 @@ text-align: center;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "info2"
-    "info3"
+   /* "info3"*/
     "sumfunc";
     
     background-color: var(--crazy-color2);
@@ -200,7 +200,7 @@ text-align: center;
 
 .info2 {
   grid-area: info2;
-  padding-top: 1.5rem;
+  padding: 1.5rem 0.5rem 0.2rem 0.5rem;
   align-self: end;
 }
 
@@ -233,15 +233,15 @@ text-align: center;
     background-color: var(--crazy-color2);
 
 }
-.info3 {
+/*.info3 {
   grid-area: info3;
 
 
-}
+}*/
 .info4 {
   grid-area: info4;
   align-self: end;
-  padding: 2.5rem 2.5rem 0 2.5rem ;
+  padding: 2.1rem 2.5rem 0 2.5rem;
 }
 
 
@@ -423,7 +423,7 @@ textarea:focus, input:focus{
   }
 
   .info2 {
-    padding: 1.5rem 0 0.5rem 0;
+    padding: 1.5rem 0.75rem 0.5rem 0.75rem;
   }
 
   .info, button {
