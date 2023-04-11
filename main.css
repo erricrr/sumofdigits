@@ -267,13 +267,7 @@ text-align: center;
 }
 
 
-button {
-  color: var(--crazy-color2);
-  background-color: var(--crazy-color1);
-    border-radius: 0.25rem;
-    border: none;
-    font-size: 1rem;
-}
+
 
 button:disabled  {
   background: var(--crazy-colorDis);
@@ -316,8 +310,16 @@ button:enabled:hover {
 button {
   cursor: pointer;
   margin: 5px;
-  padding: 0 5px;
+  padding: 5px 10px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+
+    color: var(--crazy-color2);
+    background-color: var(--crazy-color1);
+      border-radius: 0.25rem;
+      border: none;
+      font-size: 1rem;
+  
 }
 
 input:hover {
