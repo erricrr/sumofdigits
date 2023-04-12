@@ -354,6 +354,35 @@ textarea:focus, input:focus{
   text-align: center;
 }
 
+/*Tooltip*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted var(--crazy-color1);
+  color: var(--crazy-color1);
+
+  cursor: default;
+  font-size: medium;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  background-color: var(--crazy-color1);
+  color: var(--crazy-color2);
+  text-align: left;
+  border-radius: 6px;
+  padding: 10px;
+margin-left: 10px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 
 /*media Qs*/
 
@@ -431,6 +460,10 @@ textarea:focus, input:focus{
 
   .info, button {
     font-size: 0.9rem;
+  }
+  .tooltip .tooltiptext {
+    width: 120px;
+    font-size: 0.7rem;  
   }
 }
 
