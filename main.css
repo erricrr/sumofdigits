@@ -82,7 +82,7 @@
     z-index: -1;
 
     top: -14px;
-    left: 40px;
+    left: 100px;
 
     color: var(--crazy-color2);
     background-color: var(--crazy-color5);
@@ -362,7 +362,7 @@ textarea:focus, input:focus{
 
   .container:before {
     top: 28px;
-    left: 30px;
+    left: 45px;
   }
   .container {
     grid-template-columns: 1.5em 1fr 1.5em;
