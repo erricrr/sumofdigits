@@ -78,7 +78,7 @@
   
   .container:before {
     position: absolute;
-    content: 'Sum of Digits';
+    content: 'Sum of All Digits';
     z-index: -1;
 
     top: -14px;
@@ -87,7 +87,7 @@
     color: var(--crazy-color2);
     background-color: var(--crazy-color5);
     font-family: var(--font1);
-    font-size: 22vw;
+    font-size: 16vw;
   }
 
 
