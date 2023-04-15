@@ -244,8 +244,9 @@ text-align: center;
 #arrowSum {
   -webkit-animation: mover 0.5s infinite  alternate;
   animation: mover 0.5s infinite  alternate;
-  margin-right: 89px;
+  margin-right: 130px;
   font-family: var(--font1);
+  font-size: x-large;
 
 }
 
