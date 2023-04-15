@@ -241,6 +241,24 @@ text-align: center;
 
 }
 
+#arrowSum {
+  -webkit-animation: mover 0.5s infinite  alternate;
+  animation: mover 0.5s infinite  alternate;
+  margin-right: 89px;
+  font-family: var(--font1);
+
+}
+
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+
 .magicButton {
   margin-top: 1rem;
 }

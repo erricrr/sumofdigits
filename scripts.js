@@ -20,6 +20,7 @@ const limitOneClick = document.getElementById("magicButton")
 const resetBtn = document.getElementById("resetBtn")
 
 let treeOutput = document.querySelector(".treeOutput")
+const arrowSum = document.getElementById("arrowSum")
 
 
  //Function for when input box is active
@@ -34,6 +35,7 @@ inputBox.addEventListener("input", function() {
 	treeBranch3.textContent = " "
 	treeBranch31.textContent = " "
 	treeBranch4.textContent = " "
+	arrowSum.innerHTML = " "
 })
 
 //DETECT WHEN USER IS TYPING IN INPUT
@@ -158,14 +160,16 @@ if (lastDigits.length == 3) {
 
 //treeBranch4.innerHTML = treeResult3(joinDigits2)
 
-
 function treeResult4() {
+	
+	arrowSum.innerHTML = "sum of all digits" + " " + "&#10548;"
 
 	treeBranch1.textContent = treeResult1()
 
 	treeBranch3.textContent = treeResult1()
 	let numArrResult = numString()
 	treeResult3(numArrResult)
+	
 
 	firstButton.disabled = true; 
 	//limitOneClick.disabled = true
@@ -180,6 +184,7 @@ function reset() {
 	treeBranch3.textContent = " "
 	treeBranch31.textContent = " "
 	treeBranch4.textContent = " "
+	arrowSum.innerHTML = " "
 
 	firstButton.disabled = true
 /*	firstButton.disabled = true
