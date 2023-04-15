@@ -162,7 +162,7 @@ if (lastDigits.length == 3) {
 
 function treeResult4() {
 	
-	arrowSum.innerHTML = "sum of all digits" + "<sup>&nearr;</sup>"
+	arrowSum.innerHTML = "&uarr;<br>" + "sum of all digits"
 
 	treeBranch1.textContent = treeResult1()
 
