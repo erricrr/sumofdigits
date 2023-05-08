@@ -19,7 +19,9 @@
   <div class="container">
 <div class="section-1">
   <div class="info info1">
-    <p>Enter a number at least two digits long.</p>
+    <p>Enter a number at least two digits long. <span role="img" aria-label="information on how to think of numbers and digits" class="tooltip"><small>&#9432;</small>
+      <span class="tooltiptext">A number is made of digits, like a word is made of letters.</span>
+    </span></p>
   </div>
 <div class="inputGroup">
   <input required type="text" name="userNum" class="box" id="userNum" size="17" pattern=".{2,}" maxlength="14" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/^0/, '').replace(/(\..*)\./g, '$1')">
@@ -30,9 +32,7 @@
 </div>
 <div class="section-2">
   <div class="info info2">
-<p>Add the number's digits. <span role="img" aria-label="information on how to think of numbers and digits" class="tooltip"><small>&#9432;</small>
-  <span class="tooltiptext">A number is made of digits, like a word is made of letters.</span>
-</span></p>
+<p>Add the number's digits.</p>
 </div>
 <div class="sumDigi">
   <p id="tree1"></p>
@@ -47,7 +47,7 @@
 
   <div class="section-3">
     <div class="info info4">
-      <p>Keep summing the digits until you get <span class="emphText">one</span> digit&mdash;the <span class="emphText">sum of all digits</span>.</p>
+      <p>Keep summing the digits until you get <span class="emphText">one digit</span>&mdash;the <span class="emphText">sum of all digits</span>.</p>
         </div>
   
 

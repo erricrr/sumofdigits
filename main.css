@@ -382,7 +382,7 @@ margin-left: 10px;
   position: absolute;
   z-index: 1;
 
-  bottom: 100%;  
+  top: 100%;  
   left: 50%;  
   margin-left: -60px; 
 }
@@ -472,6 +472,12 @@ margin-left: 10px;
   .tooltip .tooltiptext {
     width: 120px;
     font-size: 0.7rem;  
+  }
+
+  .tooltip .tooltiptext {
+  
+    top: -350%;  
+    left: 50%;  
   }
 }
 
