@@ -472,13 +472,11 @@ margin-left: 10px;
   }
   
   .tooltip .tooltiptext {
-    width: 120px;
+    width: 143px;
   }
 
   .tooltip .tooltiptext {
-  
-    top: -525%;  
-    left: 50%;  
+    top: -450%;  
   }
 }
 
